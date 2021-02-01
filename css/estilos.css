@@ -1,0 +1,505 @@
+/*--=====================================================
+|-Generales                                         |
+=======================================================--*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #999999;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%230006ff' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color: #e9e9e9;
+}
+
+a{
+    text-decoration: none;
+    color: #e9e9e9;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+/*--=====================================================
+|-Estilos Menu                                         |
+=======================================================--*/
+.nav-main{
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.nav-brand{
+    width: 100px;
+}
+
+/*--====================
+|-Menu Left            |
+=====================--*/
+.nav-main ul{
+    display: flex;
+}
+
+.nav-main ul li{
+    padding: 15px;
+    text-transform: capitalize;
+}
+
+.nav-main ul li a{
+    padding: 3px;
+}
+
+.nav-main ul li:hover{
+    border-bottom: 2px solid #e9e9e9;
+}
+
+.nav-main ul.nav-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+
+.menu-btn{
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    z-index: 5px;
+    font-size: 1.5rem;
+    display: none;
+}
+
+hr{
+    margin: 10px 0;
+}
+/*--=====================================================
+|-Estilos Banner                                         |
+=======================================================--*/
+.banner{
+    width: 100%;
+    height: 550px;
+    background: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.banner h2{
+    font-size: 35px;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+}
+
+.banner p{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #e9e9e9;
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #666;
+    color: #e9e9e9;
+    font-size: 15px;
+    margin: 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.btn:hover{
+    opacity: .7;
+}
+
+/*--=====================================================
+|-Estilos Desarrolladores Webs                             |
+=======================================================--*/
+.noticias{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.noticias img{
+    width: 100%;
+    height: 180px;
+    transition: .3s all ease;
+}
+
+.noticias img:hover{
+    transform: scale(1.05,1.05);
+}
+
+.noticias h2{
+    font-size: 20px;
+    margin: 1px 0;
+    text-transform: capitalize;
+}
+
+.noticias a{
+    padding: 10px 0;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.noticias a:hover{
+    text-decoration: underline;
+}
+
+/*--=====================================================
+|-Estilos Banner #1                                       |
+=======================================================--*/
+.banner-one{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 40px;
+}
+
+.banner-one  img{
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-one .contenido{
+    position: absolute;
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: #e9e9e9;
+}
+
+.banner-one .contenido h2,
+.banner-one .contenido p{
+    margin: 10px 0 20px 0;
+}
+
+/*--=====================================================
+|-Estilos Banner #2                              |
+=======================================================--*/
+.banner-two{
+    width: 100%;
+    height: 350px;
+    margin: 40px 0;
+}
+
+.banner-two img{
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+/*--=====================================================
+|-Estilos Banner #3                              |
+=======================================================--*/
+
+.banner-three{
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(to bottom, #000000, #434343);
+    padding: 50px;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.banner-three h2{
+    font-size: 35px;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+}
+
+.banner-three p{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*--=====================================================
+|-Estilos Redes Sociales                          |
+=======================================================--*/
+.social{
+    margin: 50px;
+}
+
+.social h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a{
+    margin: 0 30px;
+}
+
+.links a:hover{
+    opacity: 0.7;
+}
+
+.links a i{
+    font-size: 3rem;
+}
+
+/*--=====================================================
+|-Estilos Footer                         |
+=======================================================--*/
+.footer-links{
+    background: linear-gradient(to bottom, #000000, #434343);
+    color: #e9e9e9;
+    font-size: 15px;
+    padding: 35px 0;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-container ul{
+    margin: 0 auto;
+}
+
+.footer-container ul li{
+    line-height: 2.8;
+}
+
+.footer-container ul li h3{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.footer{
+    background: #2f3640;
+    color: #616161;
+    font-size: 20px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/*--=====================================================
+|-Diseño Responsive                        |
+=======================================================--*/
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+@media (max-width:1199px) and (min-width:992px){
+    .nav-main{
+        font-size: 14px;
+        height: 60px;
+        padding: 20px 0;
+    }
+}
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+@media (max-width:991px) and (min-width:768px){
+    .banner{
+        height: 380px;
+    }
+    
+    .banner p{
+        font-size: 17px;
+        padding-bottom: 20px;
+    }
+
+    .nav-main ul.nav-menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        height: 100%;
+        padding: 30px 10px;
+        opacity: .9;    
+        transform: translateX(-400px);
+        transition: transform .5s ease-in-out;
+    }
+
+    .menu-btn{
+        display: block;
+    }
+
+    .nav-main ul.nav-menu.show{
+        transform: translateX(-20px);
+    }
+
+    .nav-main ul.nav-menu li{
+        padding: 25px 50px;
+        border-bottom: #ccc solid 1px;
+        font-size: 14px;
+    }
+
+    .nav-main ul.nav-menu-right{
+        margin-right: 40px;
+    }
+
+    .noticias{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner-one .contenido{
+        width: 80%;
+        padding: 80px 60px;
+    }
+
+    .banner-three{
+        padding: 50px;
+    }
+
+    .banner-three h2{
+        font-size: 40px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    
+    .banner-three p{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+
+    .footer-links .footer-container{
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+}
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+@media (max-width:767px){
+    .banner{
+        height: 380px;
+    }
+    
+    .banner h2{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    
+    .banner p{
+        font-size: 15px;
+    }
+
+    .nav-main ul.nav-menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        height: 100%;
+        padding: 30px 10px;
+        opacity: .9;    
+        transform: translateX(-400px);
+        transition: transform .5s ease-in-out;
+    }
+
+    .menu-btn{
+        display: block;
+    }
+
+    .nav-main ul.nav-menu.show{
+        transform: translateX(-20px);
+    }
+
+    .nav-main ul.nav-menu li{
+        padding: 20px;
+        border-bottom: #ccc solid 1px;
+        font-size: 14px;
+    }
+
+    .nav-main ul.nav-menu-right{
+        margin-right: 40px;
+    }
+
+    .noticias{
+        grid-template-columns: 1fr;
+    }
+
+    .noticias img{
+        height: 270px;
+    }
+
+    .banner-one .contenido{
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+    .banner-three{
+        padding: 40px;
+    }
+
+    .banner-three h2{
+        font-size: 20px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    
+    .banner-three p{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .social h1{
+        font-size: 40px;
+    }
+
+    .footer-links .footer-container{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-container ul{
+        margin: 0 auto;
+        width: 90%;
+        padding-bottom: 15px;
+        border-bottom: 1px #ccc solid;
+    }
+}
+
+
